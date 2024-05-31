@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+    --white: #fffcf2;
+    --orange: #ff9e00;
+    --red: #dc2f02;
+    --maroon: #6a040f;
+    --black: #343a40;
+    --hover: #ffb600;
+    --bright-orange: #f77f00;
+    --green: #2a9d8f;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+}
+
+html{
+    scrollbar-width: thin;
+    scrollbar-color: var(--bright-orange) #555;
+}
+
+body{
+    background: var(--white) !important;
+}
+
+.navbar{
+    background-color: var(--white);
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.login-button{
+    background-color: var(--orange);
+    color: var(--black);
+    font-size: 1.3rem;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+
+.login-button:hover{
+    background-color: var(--hover);
+}
+
+.navbar-toggler{
+    border: none;
+    font-size: 1.25rem;
+    outline: none;
+}
+.navbar-toggler:focus, .btn-close:focus{
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link{
+    color: var(--black);
+    font-weight: 400 !important;
+    font-size: 1.25rem !important;
+    position: relative;
+}
+
+.nav-link:hover, .nav-link.active{
+    color: #000;
+}
+
+.offcanvas{
+    background-color: var(--white) !important;
+}
+
+.navbar-brand{
+    font-family: "Montserrat", sans-serif !important;
+    font-size: 1.8rem !important;
+    /* font-weight: bold; */
+}
+.nav-span{
+    color: var(--bright-orange);
+    font-weight: bold;
+}
+
+@media (min-width: 991px){
+    .nav-link::before{
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-40%);
+        width: 100%;
+        height: 2px;
+        background-color: var(--orange);
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+    .nav-link:hover::before, .nav-link.active::before{
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+.hero-section{
+    background: url("./images/hero-section.jpg") no-repeat center;
+    height: 80vh;
+    background-size: cover;
+}
+
+.hero-section::before{
+    background-color: rgba(0,0,0,0.6);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 140px;
+}
+
+.hero-section .container{
+    height: 95vh;
+    z-index: 1;
+    position: relative;
+}
+
+.search-food{
+    width: 60%;
+    display: flex;
+    padding: 0.3rem 0.5rem;
+    flex-direction: row;
+    background-color: var(--white);
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.span{
+    color: var(--orange);
+}
+.search-food>input{
+    width: 100%;
+    background: transparent;
+    font-size: 1.1rem;
+    outline: none;
+    border: none;
+}
+.search-food>button{
+    border: none;
+    background: var(--orange);
+    font-size: 1.4rem;
+    color: var(--white);
+    border-radius: 50%;
+    padding: 0.3rem 0.55rem;
+}
+
+.heading{
+    color: var(--bright-orange);
+    font-family: "Montserrat", sans-serif !important;
+    font-weight: bold;
+}
+
+.line{
+    width: 5%;
+    margin: auto;
+    height: 3px;
+    border-radius: 10px;
+    border: 3px solid var(--bright-orange);
+    background-color: var(--bright-orange);
+}
+
+.carousel-item{
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-evenly;
+    align-items: center;
+    background: var(--white) !important;
+}
+
+.card{
+    padding: 0.4rem;
+    border-radius: 10px !important;
+    margin: 1rem;
+}
+.card>img{
+    border-radius: 10px;
+}
+
+.button{
+    border: 1px solid var(--bright-orange) !important;
+    background-color: var(--bright-orange) !important;
+    padding: 0.3rem;
+    font-family: "Montserrat", sans-serif !important;
+    color: var(--white);
+}
+.button:hover{
+    border: 1px solid var(--hover) !important;
+    background-color: var(--hover) !important;
+    transition: 0.3s all ease-in-out;
+    color: #000;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+    filter: invert(1);
+}
+
+.card-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-heading{
+    color: var(--orange);
+    margin: 1rem;
+    font-family: "Montserrat", sans-serif !important;
+    font-weight: bold;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-links>li{
+    list-style: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.footer-links>li:hover{
+    border-bottom: 2px solid var(--orange);
+    width: min-content;
+    transition: 0.3s all ease-in-out;
+}
+
+i{
+    color: var(--white);
+    font-size: 2rem;
+    cursor: pointer;
+}
+i:hover{
+    color: var(--bright-orange);
+    transition: 0.3s all ease-in-out;
+}
+
+.recipe-section{
+    background: url("./images/recipe-banner.jpg") no-repeat center;
+    height: 80vh;
+    background-size: cover;
+}
+
+.recipe-section::before{
+    background-color: rgba(0,0,0,0.6);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 140px;
+}
+
+.recipe-section .container{
+    height: 95vh;
+    z-index: 1;
+    position: relative;
+}
+
+.show-meal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.show-meal .card{
+    width: 300px;
+    height: max-content;
+    padding: 0.6rem;
+    background-color: var(--white);
+    text-align: center;
+    margin-inline: 20px;
+    margin-top: 22px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    border-radius: 10px;
+}
+.card img{
+    width: 100%;
+    border-radius: 4px;
+}
+.recipe-heading{
+    color: var(--red);
+    margin: 0.5rem;
+}
+
+.modal{
+    backdrop-filter: blur(10px);
+}
+.modal-content{
+    background: var(--white) !important;
+}
+
+.about-section{
+    background: url("./images/about-us.jpg") no-repeat center;
+    height: 80vh;
+    background-size: cover;
+}
+
+.about-section::before{
+    background-color: rgba(0,0,0,0.6);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 140px;
+}
+
+.about-section .container{
+    height: 95vh;
+    z-index: 1;
+    position: relative;
+}
+
+.about-heading{
+    font-family: "Montserrat", sans-serif !important;
+    font-weight: bold;
+}
+
+.counter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: var(--orange) !important;
+}
+.num1{
+    margin: 2rem !important;
+}
+
+.chef{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.cook{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cook img{
+    border: none;
+    border-radius: 50%;
+    height: 300px;
+}
+
+.icons .social i{
+    color: var(--white);
+    border: 1px solid var(--orange);
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.menu-section{
+    background: url("./images/menu-section.jpg") no-repeat center;
+    height: 80vh;
+    background-size: cover;
+}
+
+.menu-section::before{
+    background-color: rgba(0,0,0,0.6);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 140px;
+}
+
+.menu-section .container{
+    height: 95vh;
+    z-index: 1;
+    position: relative;
+}
+
+
+@media (max-width: 672px){
+    .card-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .card{
+        width: 100%;
+    }
+    .hero-section{
+        height: 60vh;
+    }
+    .hero-section::before{
+        background-color: rgba(0,0,0,0.6);
+        content: "";
+        position: absolute;
+        height: 60vh;
+    }
+    
+    .hero-section .container{
+        height: 65vh;
+        z-index: 1;
+        position: relative;
+    }
+    .counter{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: var(--orange) !important;
+    }
+    .chef{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 990px){
+    .card-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .card{
+        width: 100%;
+    }
+    .hero-section{
+        height: 60vh;
+    }
+    .hero-section::before{
+        background-color: rgba(0,0,0,0.6);
+        content: "";
+        position: absolute;
+        height: 60vh;
+    }
+    
+    .hero-section .container{
+        height: 65vh;
+        z-index: 1;
+        position: relative;
+    }
+    .counter{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: var(--orange) !important;
+    }
+    .chef{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1296px){
+    .hero-section::before{
+        height: 69vh;
+    }
+    .hero-section{
+        height: 69vh;
+    }
+}

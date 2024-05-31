@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FlavorFusion - Your Recipe Guide</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Adding Animation -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top" data-aos="fade-down">
+        <div class="container">
+            <a class="navbar-brand me-auto" href="/">Flavor<span class="nav-span">Fusion</span></a>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="./images/logo-light.png" width="250"
+                            alt="ChefBook"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="/" aria-current="page">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="./recipes.html">Recipes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="./AboutUs.html">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- <a href="#" class="login-button">Login</a> -->
+            <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container d-flex align-items-center justify-content-center fs-1 text-white flex-column">
+            <h1 class="text-center" data-aos="fade-up">Cooking Made Easy With Our Special <br> <span class="span">Flavor Fusion</span></h1>
+        </div>
+    </section>
+
+    <!-- Trending Recipes -->
+    <section class="features py-5" >
+        <h1 class="heading text-center mt-5">Trending Recipes</h1>
+        <hr class="text-center line mb-5">
+
+        <div class="card-container container" data-aos="fade-up">
+            <div class="card" style="width: 18rem; height: 35rem;">
+                <img src="./images//broccoli-mac-n-cheese" class="card-img-top" alt="img">
+                <div class="card-body">
+                    <h5 class="card-title">One-Pot Broccoli Mac and Cheese</h5>
+                    <p class="card-text">Skip the the roux and the extra pan. Thickened with cornstarch, this cozy
+                        one-pot broccoli mac and cheese recipe comes together in just 35 minutes.</p>
+                    <button type="button" class="btn button" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                        View Recipe
+                    </button>
+                    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5 heading" id="exampleModalLabel">One-Pot Broccoli Mac and
+                                        Cheese</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h3 class="heading">Recipe</h3>
+                                    <p>Start by bringing a large pot of salted water to a boil. Add in your favorite
+                                        pasta (like elbow macaroni) and cook according to package instructions until
+                                        it's just al dente. While the pasta is cooking, chop up some fresh broccoli into
+                                        bite-sized florets.
+                                        When the pasta is almost done, toss the broccoli florets into the pot with the
+                                        pasta and let them cook together for about 2-3 minutes until the broccoli is
+                                        tender but still slightly crisp.
+                                        Once the pasta and broccoli are cooked, drain them and return them to the pot.
+                                        Now it's time for the cheesy goodness! Stir in some shredded cheddar cheese, a
+                                        dollop of butter, a splash of milk, and a pinch of salt and pepper to taste.
+                                        Keep stirring until the cheese is melted and everything is well combined.
+                                        You can adjust the amount of cheese and milk based on how creamy you want your
+                                        mac and cheese to be. Feel free to add in extras like cooked bacon, diced
+                                        tomatoes, or a sprinkle of breadcrumbs on top for some extra flavor and crunch.
+                                        Serve your one-pot broccoli mac and cheese hot, and enjoy a comforting and
+                                        satisfying meal with minimal cleanup!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem; height: 35rem;">
+                <img src="./images//chicken-thighs-with-peaches" class="card-img-top" alt="img">
+                <div class="card-body">
+                    <h5 class="card-title">Skillet Chicken Thighs and Peaches</h5>
+                    <p class="card-text">Frozen peaches make this one-pan chicken dinner a breeze to throw together;
+                        you’ll want bread or potatoes on the side to sop up all the luscious sauce.</p>
+                    <button type="button" class="btn button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                        View Recipe
+                    </button>
+                    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5 heading" id="exampleModalLabel">Skillet Chicken Thighs
+                                        and Peaches</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h3 class="heading">Recipe</h3>
+                                    <p>Start by seasoning bone-in, skin-on chicken thighs with salt, pepper, and any of
+                                        your favorite herbs or spices. Heat a skillet over medium-high heat and add a
+                                        bit of olive oil. Once the oil is hot, place the chicken thighs in the skillet,
+                                        skin side down, and cook for about 5-6 minutes until the skin is golden brown
+                                        and crispy. Flip the chicken thighs over and cook for another 5-6 minutes until
+                                        they're cooked through and nicely browned on both sides. Remove the chicken
+                                        thighs from the skillet and set them aside.
+
+                                        In the same skillet, add a bit more olive oil if needed, then add sliced peaches
+                                        and cook for about 2-3 minutes until they start to caramelize and soften
+                                        slightly. You can also add a touch of honey or brown sugar to enhance the
+                                        sweetness of the peaches.
+
+                                        Once the peaches are caramelized, return the chicken thighs to the skillet,
+                                        nestling them among the peaches. Pour in a bit of chicken broth or white wine to
+                                        deglaze the skillet and create a flavorful sauce. Let everything simmer together
+                                        for a few minutes until the sauce has thickened slightly and the chicken is
+                                        heated through.
+
+                                        Garnish the skillet chicken thighs and peaches with some fresh herbs like thyme
+                                        or parsley, and serve hot. This dish pairs beautifully with a side of rice,
+                                        couscous, or crusty bread to soak up the delicious sauce. Enjoy the sweet and
+                                        savory flavors in every bite!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem; height: 35rem;">
+                <img src="./images/ginger-fried-rice" class="card-img-top" alt="img">
+                <div class="card-body">
+                    <h5 class="card-title">Ginger Fried Rice</h5>
+                    <p class="card-text">This quick, fragrant comfort food is what nourished cookbook author Hetty Lui
+                        McKinnon after giving birth to her daughter.</p>
+                    <button type="button" class="btn button" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                        Get Recipe
+                    </button>
+                    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5 heading" id="exampleModalLabel">Ginger Fried Rice</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h3 class="heading">Recipe</h3>
+                                    <p>Start by cooking your rice according to package instructions and set it aside to
+                                        cool. You can use leftover rice for this recipe, as it works best when it's
+                                        chilled.
+
+                                        In a skillet or wok, heat some oil over medium-high heat. Add finely chopped
+                                        ginger and minced garlic to the hot oil and sauté for about a minute until
+                                        fragrant.
+
+                                        Next, add diced vegetables of your choice, such as carrots, bell peppers, peas,
+                                        and onions. Stir-fry the vegetables until they are tender-crisp, about 3-4
+                                        minutes.
+
+                                        Push the vegetables to one side of the skillet and crack eggs into the empty
+                                        space. Scramble the eggs until they're cooked through, then mix them with the
+                                        vegetables.
+
+                                        Add the cooked rice to the skillet, breaking up any clumps with a spoon. Pour in
+                                        some soy sauce and stir-fry everything together until the rice is heated through
+                                        and evenly coated with the sauce. You can adjust the amount of soy sauce to your
+                                        taste.
+
+                                        For extra flavor, you can also add some diced cooked chicken, shrimp, or tofu to
+                                        the fried rice.
+
+                                        Finally, garnish your ginger fried rice with chopped green onions and a sprinkle
+                                        of sesame seeds for added texture and flavor.
+
+                                        Serve the ginger fried rice hot as a satisfying main dish or as a tasty side
+                                        dish alongside your favorite Asian-inspired meal. Enjoy the wonderful blend of
+                                        ginger, garlic, and soy sauce in every bite!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem; height: 35rem;">
+                <img src="./images/focaccia.webp" class="card-img-top" alt="img">
+                <div class="card-body">
+                    <h5 class="card-title">Gluten-Free Focaccia with Rosemary and Onion</h5>
+                    <p class="card-text">Psyllium husk is the game-changing ingredient that transforms this easy
+                        focaccia
+                        recipe from “good for gluten-free” to “absolutely amazing.”.</p>
+                    <button type="button" class="btn button" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                        View Recipe
+                    </button>
+                    <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5 heading" id="exampleModalLabel">Gluten-Free Focaccia
+                                        with Rosemary and Onion</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h3 class="heading">Recipe</h3>
+                                    <p>Start by preheating your oven to 375°F (190°C) and greasing a baking sheet with
+                                        olive oil.
+
+                                        In a large mixing bowl, combine 2 cups of gluten-free all-purpose flour, 1
+                                        teaspoon of xanthan gum (if not already included in your flour blend), 1
+                                        tablespoon of baking powder, and 1 teaspoon of salt. Mix well to combine.
+
+                                        In a separate bowl, whisk together 1 cup of warm water, 2 tablespoons of olive
+                                        oil, and 1 teaspoon of honey (or maple syrup). Gradually pour the wet
+                                        ingredients into the dry ingredients, stirring until a sticky dough forms.
+
+                                        Transfer the dough onto the greased baking sheet and use wet hands to press it
+                                        out into a rectangle or oval shape, about 1/2 inch thick.
+
+                                        Brush the top of the dough with additional olive oil, then sprinkle chopped
+                                        fresh rosemary and thinly sliced onions evenly over the surface.
+
+                                        Bake the focaccia in the preheated oven for 20-25 minutes, or until golden brown
+                                        and cooked through. You can test for doneness by inserting a toothpick into the
+                                        center – it should come out clean.
+
+                                        Once baked, remove the focaccia from the oven and let it cool slightly on the
+                                        baking sheet before slicing and serving.
+
+                                        Enjoy this gluten-free focaccia with rosemary and onion as a delicious side
+                                        dish, snack, or accompaniment to your favorite soups and salads. The combination
+                                        of fragrant rosemary and savory onion makes for a flavorful and satisfying
+                                        treat!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-container container" data-aos="fade-up">
+            <div class="card" style="width: 18rem; height: 35rem;">
+                <img src="./images/ginger-garlic-chicken-with-veg-fry.webp" class="card-img-top" alt="img">
+                <div class="card-body">
+                    <h5 class="card-title">Ginger-Garlic Chicken and Vegetable Stir Fry</h5>
+                    <p class="card-text">Level up your weeknight dinner game with this fragrant, veggie-packed stir-fry.
+                    </p>
+                    <button type="button" class="btn button" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                        View Recipe
+                    </button>
+                    <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5 heading" id="exampleModalLabel">Ginger-Garlic Chicken
+                                        and Vegetable Stir Fry</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h3 class="heading">Recipe</h3>
+                                    <p>Start by slicing boneless, skinless chicken breasts or thighs into thin strips.
+                                        Marinate the chicken strips in a mixture of minced ginger, minced garlic, soy
+                                        sauce, and a splash of rice vinegar for about 15-30 minutes.
+
+                                        While the chicken is marinating, prepare your vegetables. You can use a variety
+                                        of vegetables such as bell peppers, broccoli, carrots, snap peas, and mushrooms.
+                                        Slice them into bite-sized pieces so they cook quickly and evenly.
+
+                                        Heat some oil in a large skillet or wok over medium-high heat. Once hot, add the
+                                        marinated chicken strips to the skillet and stir-fry until they are cooked
+                                        through and lightly browned. Remove the chicken from the skillet and set it
+                                        aside.
+
+                                        In the same skillet, add a bit more oil if needed, then add the sliced
+                                        vegetables. Stir-fry the vegetables for a few minutes until they are
+                                        tender-crisp but still vibrant in color.
+
+                                        Return the cooked chicken to the skillet with the vegetables. Pour in any
+                                        remaining marinade from the chicken and stir everything together.
+
+                                        For extra flavor and thickness, you can mix together a cornstarch slurry by
+                                        combining cornstarch with cold water, then add it to the skillet. Stir well
+                                        until the sauce thickens slightly.
+
+                                        Season the stir fry with a pinch of salt and pepper to taste. You can also add a
+                                        drizzle of sesame oil for additional flavor if desired.
+
+                                        Garnish the ginger-garlic chicken and vegetable stir fry with chopped green
+                                        onions or cilantro before serving. Serve hot over steamed rice or noodles for a
+                                        delicious and satisfying meal packed with vibrant flavors and nutrients!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem; height: 35rem;">
+                <img src="./images/herby-cauliflower-fritters" class="card-img-top" alt="img">
+                <div class="card-body">
+                    <h5 class="card-title">Herby Cauliflower Fritters</h5>
+                    <p class="card-text">Frozen cauliflower deserves to be more than a side. Here a quick zap in the
+                        microwave primes the veggie crumbles to become a hearty vegetarian main.</p>
+                    <button type="button" class="btn button" data-bs-toggle="modal" data-bs-target="#exampleModal6">
+                        Get Recipe
+                    </button>
+                    <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5 heading" id="exampleModalLabel">Herby Cauliflower
+                                        Fritters</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h3 class="heading">Recipe</h3>
+                                    <p>Start by steaming or boiling cauliflower florets until they're tender. Drain them
+                                        well and then mash them with a fork or potato masher until they're mostly smooth
+                                        but still have some texture.
+
+                                        Transfer the mashed cauliflower to a large mixing bowl and add chopped fresh
+                                        herbs of your choice. You can use parsley, cilantro, dill, chives, or a
+                                        combination of your favorites. Add in minced garlic, a pinch of salt, pepper,
+                                        and your preferred spices for extra flavor.
+
+                                        Next, crack in a couple of eggs and mix everything together until well combined.
+                                        Gradually add gluten-free flour or almond flour to the mixture until it forms a
+                                        thick batter that holds together.
+
+                                        Heat some oil in a skillet over medium heat. Once the oil is hot, spoon the
+                                        cauliflower batter into the skillet to form small fritters. Flatten them
+                                        slightly with the back of a spoon and cook for 3-4 minutes on each side, or
+                                        until golden brown and crispy.
+
+                                        Once the fritters are cooked through and crispy on the outside, transfer them to
+                                        a plate lined with paper towels to drain any excess oil.
+
+                                        Serve the herby cauliflower fritters hot, garnished with additional fresh herbs
+                                        and a squeeze of lemon juice if desired. These fritters make a delicious
+                                        appetizer, snack, or side dish that's packed with flavor and nutrients!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem; height: 35rem;">
+                <img src="./images/gluten-free-chocolate-cake" class="card-img-top" alt="img">
+                <div class="card-body">
+                    <h5 class="card-title">Gluten-Free Chocolate Cake</h5>
+                    <p class="card-text">Our best gluten-free chocolate cake recipe combines oat and rice flours for a
+                        tender fudgy all-occasion dessert. The pudding-like frosting is just a bonus.</p>
+                    <button type="button" class="btn button" data-bs-toggle="modal" data-bs-target="#exampleModal7">
+                        View Recipe
+                    </button>
+                    <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5 heading" id="exampleModalLabel">Gluten-Free Chocolate
+                                        Cake</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h3 class="heading">Recipe</h3>
+                                    <p>Start by preheating your oven to 350°F (175°C). Grease a 9-inch round cake pan
+                                        and line the bottom with parchment paper for easy removal.
+
+                                        In a large mixing bowl, whisk together gluten-free all-purpose flour, cocoa
+                                        powder, baking powder, baking soda, and a pinch of salt until well combined.
+
+                                        In another bowl, cream together softened butter and granulated sugar until light
+                                        and fluffy. Add in eggs, one at a time, beating well after each addition. Mix in
+                                        some vanilla extract for extra flavor.
+
+                                        Gradually add the dry ingredients to the wet ingredients, alternating with milk,
+                                        and mixing until a smooth batter forms. Ensure that all ingredients are well
+                                        incorporated.
+
+                                        Pour the batter into the prepared cake pan and smooth the top with a spatula.
+                                        Tap the pan gently on the counter to release any air bubbles.
+
+                                        Bake the cake in the preheated oven for 30-35 minutes, or until a toothpick
+                                        inserted into the center comes out clean.
+
+                                        Once baked, remove the cake from the oven and let it cool in the pan for about
+                                        10 minutes before transferring it to a wire rack to cool completely.
+
+                                        While the cake is cooling, you can prepare your favorite frosting. You can go
+                                        for a classic chocolate buttercream or a simple ganache, depending on your
+                                        preference.
+
+                                        Once the cake is completely cooled, frost it generously with your chosen
+                                        frosting. You can also add some chocolate shavings or sprinkles on top for
+                                        decoration if you like.
+
+                                        Slice and serve this decadent gluten-free chocolate cake to satisfy your sweet
+                                        cravings. It's moist, rich, and utterly delicious – a perfect treat for any
+                                        occasion!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem; height: 35rem;">
+                <img src="./images/white-bean-soup" class="card-img-top" alt="img">
+                <div class="card-body">
+                    <h5 class="card-title">Lemony White Bean Soup</h5>
+                    <p class="card-text">Plump white beans create a luscious broth combined with lemon zest, onion,
+                        garlic,
+                        and celery. A stealthy knob of butter adds just enough richness.</p>
+                    <button type="button" class="btn button" data-bs-toggle="modal" data-bs-target="#exampleModal8">
+                        Get Recipe
+                    </button>
+                    <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5 heading" id="exampleModalLabel">Lemony White Bean Soup
+                                    </h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h3 class="heading">Recipe</h3>
+                                    <p>Start by heating some olive oil in a large pot over medium heat. Add finely
+                                        chopped onions, celery, and carrots to the pot, and sauté until they're softened
+                                        and fragrant, about 5-7 minutes.
+
+                                        Next, add minced garlic to the pot and cook for an additional minute until it
+                                        becomes aromatic.
+
+                                        Now, add drained and rinsed canned white beans (such as cannellini or navy
+                                        beans) to the pot along with vegetable broth. You can also use homemade broth if
+                                        you prefer. Bring the mixture to a simmer.
+
+                                        Once the soup is simmering, add in fresh thyme leaves, a bay leaf, and a pinch
+                                        of salt and pepper to taste. Let the soup simmer for about 15-20 minutes to
+                                        allow the flavors to meld together.
+
+                                        After the soup has simmered, remove the bay leaf from the pot. Then, using an
+                                        immersion blender or a regular blender, puree a portion of the soup until it
+                                        reaches your desired consistency. This will help thicken the soup while still
+                                        leaving some whole beans and vegetables for texture.
+
+                                        Finally, add freshly squeezed lemon juice to the soup, adjusting the amount to
+                                        taste depending on how lemony you prefer your soup. Stir well to combine.
+
+                                        Serve the lemony white bean soup hot, garnished with a sprinkle of freshly
+                                        chopped parsley or a drizzle of extra virgin olive oil. This soup is light,
+                                        flavorful, and refreshing, perfect for a comforting meal on a chilly day. Enjoy!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container-fluid text-white py-5 px-5"
+        style="background: #0f0c29; background: linear-gradient(to right, #24243e, #302b63, #0f0c29); border-radius: 5rem 0 0 0;">
+        <div class="left-footer">
+            <img src="./images/logo.png" alt="logo" class="my-3">
+            <p>Your Cooking Guide for Flavorful Dishes.</p>
+        </div>
+        <div class="mid-footer mx-3">
+            <h3 class="footer-heading">Quick Links</h3>
+            <ul class="footer-links">
+                <li>Home</li>
+                <li>About</li>
+                <li>Recipes</li>
+                <li>Careers</li>
+            </ul>
+        </div>
+        <div class="right-footer">
+            <h3 class="footer-heading">Our Social Presence</h3>
+            <div class="container px-5">
+                <i class="fa-brands fa-twitter mx-1"></i>
+                <i class="fa-brands fa-instagram mx-1"></i>
+                <i class="fa-brands fa-facebook mx-1"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/v4-shims.min.js" integrity="sha512-1eyBIzeEcxyxJkTmQIGLrXo2AK9DVykziyPi7JkNR61HNC8y87OeqQFqvRwgwnqJpjxfUj43Fup0szvPrR3Ilg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Animation JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 300,
+        duration: 400
+      });
+    </script>
+</body>
+
+</html>
